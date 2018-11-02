@@ -80,6 +80,7 @@ nav {
     overflow: hidden;
     background-color: white;
     box-shadow: 1px 1px 1px 1px;
+    padding: 0 1.56em 0 1.56em;
 }
 
 .portfolio-identifier {
