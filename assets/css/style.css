@@ -1,0 +1,209 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* font-size: 100%; */
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Beginning of CSS */
+
+:root {
+    --main-color: rgb(94, 190, 186);
+    --off-color: rgb(74, 170, 166);
+}
+body {
+    text-align: center;
+    background-color:silver;
+    background-image:
+    radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+    background-size: 100px 50px;
+}
+
+nav {
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.portfolio-identifier {
+    height: inherit;
+    float: left;
+    padding: 5px;
+    margin-left: 8em;
+    background-color: var(--main-color);
+    border-left: 2px solid var(--off-color);
+    border-right: 2px solid var(--off-color);
+}
+
+nav > ul {
+    overflow: hidden;
+    float: right;
+    margin-right: 8em;
+    display: flex;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+    top: 0;
+    bottom: 0;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+}
+
+li:hover {
+    background-color: var(--main-color)
+}
+
+nav > ul > li:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+.card-container {
+    border: 1px solid black;
+    margin: auto;
+    width: 80%;
+    height: 25em;
+    overflow: hidden;
+    margin-top: 4em;
+    margin-bottom: 3em;
+    background-color: white;
+    padding: 5px;
+}
+
+h1 {
+    color: var(--main-color)
+}
+
+.card-container > p {
+    padding: 10px;
+    line-height: 25px;
+}
+
+#self-portrait {
+    float: left;
+    border-radius: 35px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--main-color);
+    padding: 10px;
+    box-shadow: 3px 3px 3px 4px;
+}
+
+form {    
+    text-align: left;
+}
+
+.form-title {
+    margin-left: 2.7em;
+}
+
+.input-text {
+    display: block;
+    margin: auto;
+    width: 85em;
+    max-width: 100%;
+}
+
+#message-box {
+    max-width: 85em;
+    height: 18em;
+    max-height: 18em;
+    min-height: 18em;
+    min-width: 85em;
+}
+
+#submit-button {
+    background-color: var(--main-color);
+    height: 2em;
+    width: 8em;
+    margin-left: 3.7em;
+    margin-top: 0.8em;
+}
+
+.projects {
+    float: left;
+    margin: 10px;
+}
+
+.banner {
+    position: absolute;
+    width: 170px;
+    height: 35px;
+    background-color: var(--main-color);
+    color: black;
+    top: 16em;
+    padding-top: 1em;
+}
+
+#product-landing-banner {
+    left: 8.6em;
+}
+
+#survey-form-banner{
+    left: 20.5em;
+}
+
+#tribute-page-banner{
+    left: 32.4em;
+}
+
+#tech-doc-banner{
+    left: 44.25em;
+}
