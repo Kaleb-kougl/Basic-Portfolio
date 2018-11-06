@@ -152,10 +152,10 @@ h1 {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
+    width: 100%;
     background-color: var(--main-color);
     padding: 10px;
     box-shadow: 3px 3px 3px 4px black;
@@ -199,27 +199,19 @@ form {
 
 .projects {
     float: left;
-}
-
-/* This needs to be fixed */
-.banner {
-    position: relative;
-    z-index: 2;
-    width: 170px;
-    height: 35px;
-    background-color: var(--main-color);
-    color: black;
+    width: inherit;
+    height: inherit;
 }
 
 .image-container {
-    width: 170px;
-    height: 170px;
+    width: 200px;
+    height: 200px;
     float: left;
     position: relative;
     margin: 10px;
 }
 
-.testing {
+.banner {
     position: absolute;
     background-color: var(--main-color);
     width: 100%;
